@@ -1,4 +1,4 @@
-# Dcoker Build e Publish Images
+# Docker Build e Publish Images
 
 Projeto __simples__ criado __apenas para estudos sobre conteiners, virtualização e docker e pipelines__. Com objetivo de entender a criação de imagens, container, subir imagem no Docker hub e criar uma pipelina para rodar de forma automatica.
 
