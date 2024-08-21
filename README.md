@@ -4,9 +4,13 @@ Projeto __simples__ criado __apenas para estudos sobre conteiners, virtualizaç�
 
 #### Informações sobre estudos:
 
-> [TechWorld With Nana. Docker Crash Course for Absolute Beginners. Youtube, fev. 2023](https://www.youtube.com/watch?v=pg19Z8LL06w)
+> [TechWorld With Nana. Docker Crash Course for Absolute Beginners. Youtube, Fev. 2023](https://www.youtube.com/watch?v=pg19Z8LL06w)
 
-> [Komalminhas. A step-by-step guide to Build And Push Your Own Docker Images To DockerHub. Medium, ago. 2023](https://medium.com/@komalminhas.96/a-step-by-step-guide-to-build-and-push-your-own-docker-images-to-dockerhub-709963d4a8bc)
+> [Komalminhas. A step-by-step guide to Build And Push Your Own Docker Images To DockerHub. Medium, Ago. 2023](https://medium.com/@komalminhas.96/a-step-by-step-guide-to-build-and-push-your-own-docker-images-to-dockerhub-709963d4a8bc)
+
+> [TechWorld With Nana. From Zero to DevOps Engineer - DevOps Roadmap for YOUR specific background. Medium, Out. 2022](https://dev.to/techworld_with_nana/from-zero-to-devops-engineer-devops-roadmap-for-your-specific-background-4h8n)
+
+> [Fernanda Kipper | Dev. APRENDA DOCKER DO ZERO | TUTORIAL COMPLETO COM DEPLOY. Youtube, Abr. 2024](https://www.youtube.com/watch?v=DdoncfOdru8&t=13s)
 
 ## Instalação projeto
 - Rode o comando para baixar a imagem do projeto `docker pull fercassia/dev-docker:latest`
