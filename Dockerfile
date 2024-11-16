@@ -1,17 +1,22 @@
 # Base do arquivo
-FROM node:22-alpine3.19
+FROM node:20 AS build
 
-# Copiando o codigo fonte e o package.json para diretorio
-# do container
-COPY package.json /app/
-COPY src /app/
-
-# Indo para o diretorio do projeto
 WORKDIR /app
 
-# Baixando as dependencias doprojeto no container
-RUN npm install
+COPY package*.json ./ 
 
-# Ultimo comando do arquivo
-# rodar o servidor
-CMD ["node","server.js"]
+RUN npm install
+RUN npm ci --only=production && npm cache clean --force
+
+COPY . .
+
+FROM node:20-alpine3.19 AS prod
+
+WORKDIR /app
+
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/src  /app/src
+
+EXPOSE 4000
+
+CMD ["node","/app/src/server.js"]
