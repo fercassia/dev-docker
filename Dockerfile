@@ -15,8 +15,9 @@ FROM node:20-alpine3.19 AS prod
 WORKDIR /app
 
 COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package.json  ./package.json
 COPY --from=build /app/src  /app/src
 
 EXPOSE 4000
 
-CMD ["node","/app/src/server.js"]
+CMD ["npm","run","start"]
