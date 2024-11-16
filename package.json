@@ -9,7 +9,7 @@
   "author": "fercassia",
   "license": "ISC",
   "description": "Learning Docker",
-  "devDependencies": {
-    "express": "^4.19.2"
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }
